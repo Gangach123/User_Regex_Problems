@@ -7,10 +7,10 @@ namespace Regex_Problems
         {
             Console.WriteLine("Welcome to User Registration Regex Problems.");
             Validation validatingPassword = new Validation();
-            validatingPassword.ValidatingPassword_2("Ganga123");
-            validatingPassword.ValidatingPassword_2("ganga12");
-            validatingPassword.ValidatingPassword_2("GangaA234");
-            validatingPassword.ValidatingPassword_2("Ganga1");
+            validatingPassword.ValidatingPassword_4("Ganga123");
+            validatingPassword.ValidatingPassword_4("ganga1234$");
+            validatingPassword.ValidatingPassword_4("Ganga123@");
+            validatingPassword.ValidatingPassword_4("Ganga12@");
         }
     }
 }
