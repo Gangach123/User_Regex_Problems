@@ -53,35 +53,36 @@ namespace Regex_Problems
             Console.WriteLine(result);
         }
 
-        public void ValidatingNumber(string data)
+        public bool ValidatingNumber(string data)
         {
-            string result = Regex.IsMatch(data, mobileNo) ? $"{data}: Valid Mobile Number" : $"{data}: Invalid Mobile Number";
-
-            Console.WriteLine(result);
-        }
-        public void Validating_Email(string data)
-        {
-            string result = Regex.IsMatch(data, emailId) ? $"{data}: Valid Mail Id" : $"{data}: Invalid Mail Id";
-
-            Console.WriteLine(result);
-        }
-
-
-        public void ValidateFirstName(string data)
-        {
-
-            string result = Regex.IsMatch(data, firstName) ? $"{data}: valid" : $"{data}: invalid";
-
-            Console.WriteLine(result);
-
+            bool result = Regex.IsMatch(data, mobileNo) ? true : false;
+            return result;
 
         }
-        public void ValidateLastName(string data)
+        public bool Validating_Email(string data)
+        {
+            bool result = Regex.IsMatch(data, emailId) ? true : false;
+
+            return result;
+        }
+
+
+        public bool ValidateFirstName(string data)
         {
 
-            string result = Regex.IsMatch(data, lastName) ? $"{data}: valid" : $"{data}: invalid";
+            bool result = Regex.IsMatch(data, firstName) ? true : false;
 
-            Console.WriteLine(result);
+            return result;
+
+
+        }
+
+        public bool ValidateLastName(string data)
+        {
+
+            bool result = Regex.IsMatch(data, lastName) ? true : false;
+
+            return result;
 
         }
     }
